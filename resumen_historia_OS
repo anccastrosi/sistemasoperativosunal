@@ -1,0 +1,50 @@
+Introducción a los SOs.
+
+"Interfáz entre usuario y hardware", permite una interacción y guía para la interacción de los programas y el hardware del dispositivo
+En el vídeo indican 3 ejemplos de Sistemas operativos como lo es MacOS, linux y windows con cada una de sus versiones además de 
+Sistemas operativos para dispositivos móbiles resaltando a IOS y Android
+
+Hablan también sobre la diferencia entre Windows y Linux, en cuanto a los precios y en cuanto al tipo de software, donde Linux es
+software libre por lo que no tiene ningún costo obligatorio para su uso.
+
+Un sistema operativo debe poder evolucionar sin afectar la experiencia de usuario, adicionalmente administra el hardware, 
+relaciona dispositivos periféricos, organiza datos, gestiona las comunicaciones de red, gestiona errores.
+
+Tipos de SOs
+
+- Multitareas o Monotareas
+- Multiusuario o Monousuario
+
+La mayoría de los sistemas operativos tienen una interfáz gráfica.
+
+Historia de los SOs.
+
+1. CTSS 1961
+2. EXEC II 1962
+3. EXEC IV 1964
+4. OS 360 1965
+5. UNIX 1969
+6. BATCH 11 1970
+7. OS 8 1971 [Combina EXEC I y EXEC II]
+8. VM 1972
+9. ALTO OS 1973
+10. CP-40M 1976
+11. Apple II 1978 Estable hasta 1980
+12. QDOS 1980 Estable hasta 1981
+13. MSDOS 1986 Es igual a QDOS, Microsoft lo compra
+14. SanOS 1992
+15. ULTEX 
+16. LISAOS 1983 Apple sale antes de Windows (Se cree que Microsoft robó la idea)
+17. Novel Neware
+18. MacOS 1984
+19. Linux 1991, software libre usa Unix "el alma de otros SOs"
+20. Plan 9 1993
+21. Windows 95 1995
+22. Ubuntu 2004 licencia libre para plataformas de 32 y 64 bits
+-
+...
+distribuciones nuevas de Windows y MacOS
+...
+-
+
+
