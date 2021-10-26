@@ -1,0 +1,8 @@
+os.lchmod
+Cambia el modo de path al mode numérico. Si la ruta es un enlace simbólico, esto afecta al enlace simbólico en lugar del objetivo. Consulte los documentos para chmod() para conocer los posibles valores de mode. A partir de Python 3.3, esto es equivalente a os.chmod(path, mode, follow_symlinks=False).
+
+Lanza un evento de auditoría os.chmod con argumentos path, mode, dir_fd.
+
+Disponibilidad: Unix.
+
+Distinto en la versión 3.6: Acepta un objeto tipo ruta

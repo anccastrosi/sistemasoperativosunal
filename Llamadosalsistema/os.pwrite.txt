@@ -1,0 +1,8 @@
+os.pwrite
+Escribe la cadena de bytes en str en el descriptor de archivo fd en la posición offset, sin modificar el desplazamiento del archivo.
+
+Retorna el número de bytes realmente escritos.
+
+Disponibilidad: Unix.
+
+Nuevo en la versión 3.3.

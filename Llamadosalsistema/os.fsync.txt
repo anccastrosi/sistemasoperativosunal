@@ -1,0 +1,4 @@
+os.fsync
+Fuerza la escritura del archivo con el descriptor de archivo fd en el disco. En Unix, esto llama a la función nativa fsync(); en Windows, la función MS _commit().
+
+Si está comenzando con un Python almacenado en búfer file object f, primero haga f.flush(), y luego haga os.fsync(f.fileno()), para garantizar que todas las memorias intermedias internas asociadas con f se escriban en disco.

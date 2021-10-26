@@ -1,0 +1,4 @@
+os.posix_fadvise
+Avisa una intención de acceder a los datos en un patrón específico, permitiendo así que el núcleo haga optimizaciones. El consejo se aplica a la región del archivo especificada por fd que comienza en offset y se extiende para len bytes. advice es uno de POSIX_FADV_NORMAL, POSIX_FADV_SEQUENTIAL, POSIX_FADV_RANDOM, POSIX_FADV_NOREUSE, POSIX_FADV_WILLNEED o POSIX_FADV_DONTNEED.
+
+Disponibilidad: Unix.

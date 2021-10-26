@@ -1,0 +1,10 @@
+os.mknod
+Cree un nodo del sistema de archivos (archivo, archivo especial del dispositivo o canalización con nombre) llamado path. mode especifica tanto los permisos para usar como el tipo de nodo que se creará, combinándose (OR bit a bit) con uno de stat.S_IFREG, stat.S_IFCHR, stat.S_IFBLK , y stat.S_IFIFO (esas constantes están disponibles en stat). Para stat.S_IFCHR y stat.S_IFBLK, device define el archivo especial del dispositivo recién creado (probablemente usando os.makedev()), de lo contrario se ignora.
+
+Esta función también puede admitir rutas relativas a descriptores de directorio.
+
+Disponibilidad: Unix.
+
+Nuevo en la versión 3.3: El argumento dir_fd.
+
+Distinto en la versión 3.6: Acepta un objeto tipo ruta.

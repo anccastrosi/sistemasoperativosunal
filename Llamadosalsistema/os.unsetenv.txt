@@ -1,0 +1,8 @@
+os.unsetenv(key)
+Desestablece (elimine) la variable de entorno llamada key. Dichos cambios en el entorno afectan a los subprocesos iniciados con os.system(), popen() o fork() y execv().
+
+La eliminación de elementos en os.environ es automáticamente traducida a llamadas correspondiente a unsetenv(); sin embardo, llamadas a unsetenv() no actualizan os.environ, así que es realmente preferible eliminar elementos de os.environ.
+
+Lanza un evento de auditoría os.unsetenv con argumento key.
+
+Distinto en la versión 3.9: Estas funciones se encuentra ahora siempre disponible y también esta disponible en Windows

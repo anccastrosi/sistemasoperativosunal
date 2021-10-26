@@ -1,0 +1,10 @@
+os.get_terminal_size
+Retorna el tamaño de la ventana de la terminal como (columns, lines), una tupla del tipo terminal_size.
+
+El argumento opcional fd (por defecto es STDOUT_FILENO, o la salida estándar) especifica qué descriptor de archivo debe consultarse.
+
+Si el descriptor de archivo no está conectado a una terminal, se genera un OSError.
+
+shutil.get_terminal_size() es la función de alto nivel que normalmente debería usarse, os.get_terminal_size es la implementación de bajo nivel.
+
+Disponibilidad: Unix, Windows.

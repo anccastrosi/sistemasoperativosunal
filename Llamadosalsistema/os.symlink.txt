@@ -1,0 +1,21 @@
+os.symlink
+Cree un enlace simbólico que apunte a src llamado dst.
+
+En Windows, un enlace simbólico representa un archivo o un directorio, y no se transforma dinámicamente en el destino. Si el objetivo está presente, el tipo de enlace simbólico se creará para que coincida. De lo contrario, el enlace simbólico se creará como un directorio si target_is_directory es True o un enlace simbólico de archivo (el valor predeterminado) de lo contrario. En plataformas que no son de Windows, target_is_directory se ignora.
+
+Esta función puede admitir rutas relativas a descriptores de directorio.
+
+Nota En las versiones más recientes de Windows 10, las cuentas sin privilegios pueden crear enlaces simbólicos si el Modo desarrollador está habilitado. Cuando el Modo desarrollador no está disponible / habilitado, se requiere el privilegio SeCreateSymbolicLinkPrivilege, o el proceso debe ejecutarse como administrador.
+OSError se lanza cuando un usuario sin privilegios llama a la función.
+
+Lanza un evento de auditoría os.symlink con argumentos src, dst, dir_fd.
+
+Disponibilidad: Unix, Windows.
+
+Distinto en la versión 3.2: Se agregó soporte para enlaces simbólicos de Windows 6.0 (Vista).
+
+Nuevo en la versión 3.3: Se agregó el argumento dir_fd y ahora permite target_is_directory en plataformas que no son de Windows.
+
+Distinto en la versión 3.6: Acepta un path-like object para src y dst.
+
+Distinto en la versión 3.8: Se agregó soporte para enlaces simbólicos sin elevar en Windows con el modo de desarrollador.

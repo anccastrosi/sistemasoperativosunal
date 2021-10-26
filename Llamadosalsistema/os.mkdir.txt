@@ -1,0 +1,16 @@
+os.mkdir
+Cree un directorio llamado path con modo numérico mode.
+
+Si el directorio ya existe, se excita FileExistsError.
+
+En algunos sistemas, mode se ignora. Donde se usa, el valor actual de umask se enmascara primero. Si se establecen bits distintos de los últimos 9 (es decir, los últimos 3 dígitos de la representación octal del mode), su significado depende de la plataforma. En algunas plataformas, se ignoran y debe llamar a chmod() explícitamente para configurarlos.
+
+Esta función también puede admitir rutas relativas a descriptores de directorio.
+
+También es posible crear directorios temporales; vea la función tempfile del módulo tempfile.mkdtemp().
+
+Lanza un evento de auditoría os.mkdir con argumentos ruta, modo, dir_fd.
+
+Nuevo en la versión 3.3: El argumento dir_fd.
+
+Distinto en la versión 3.6: Acepta un objeto tipo ruta.

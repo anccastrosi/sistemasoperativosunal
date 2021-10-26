@@ -1,0 +1,27 @@
+os.pread
+Lee como máximo n bytes del descriptor de archivo fd en una posición de offset, sin modificar el desplazamiento (offset) del archivo.
+
+Retorna una cadena de bytes que contiene los bytes leídos. Si se alcanza el final del archivo al que hace referencia fd, se retorna un objeto de bytes vacío.
+
+Disponibilidad: Unix.
+
+Nuevo en la versión 3.3.
+
+os.preadv(fd, buffers, offset, flags=0)
+Lee de un descriptor de archivo fd en una posición de offset en mutable objetos de tipo bytes buffers, dejando el desplazamiento del archivo sin cambios. Transfiere datos a cada búfer hasta que esté lleno y luego pase al siguiente búfer en la secuencia para contener el resto de los datos.
+
+El argumento flags contiene un operador de bit a bit OR de cero o más de las siguientes flags:
+
+RWF_HIPRI
+
+RWF_NOWAIT
+
+Retorna el número total de bytes realmente leídos que puede ser menor que la capacidad total de todos los objetos.
+
+El sistema operativo puede establecer un límite (sysconf() valor 'SC_IOV_MAX') en el número de búferes que se pueden usar.
+
+Combina la funcionalidad de os.readv() y os.pread().
+
+Disponibilidad: Linux 2.6.30 y posterior, FreeBSD 6.0 y posterior, OpenBSD 2.7 y posterior, AIX 7.1 y posterior. El uso de flags requiere Linux 4.6 o posterior.
+
+Nuevo en la versión 3.7.

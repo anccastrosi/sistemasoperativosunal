@@ -1,0 +1,20 @@
+os.uname()
+Retorna información que identifica el sistema operativo actual. El valor retornado es un objeto con cinco atributos:
+
+sysname - nombre del sistema operativo
+
+nodename - nombre de la máquina en la red (definida por la implementación)
+
+release - release del sistema operativo
+
+version - versión del sistema operativo
+
+machine - identificador de hardware
+
+Por compatibilidad con versiones anteriores, este objeto también es iterable, se comporta como una tupla que contiene sysname, nodename, release, version, y machine en ese orden.
+
+Algunos sistemas se truncan nodename a 8 caracteres o al componente principal; una mejor manera de obtener el nombre de host es usar socket.gethostname() o incluso socket.gethostbyaddr(socket.gethostname()).
+
+Disponibilidad: sistemas tipo Unix más nuevos.
+
+Distinto en la versión 3.3: El tipo de objeto retornado cambió de una tupla a un objeto tipo tupla con atributos con nombre.

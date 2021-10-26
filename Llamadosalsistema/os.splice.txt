@@ -1,0 +1,10 @@
+os.splice
+Transfer count bytes from file descriptor src, starting from offset offset_src, to file descriptor dst, starting from offset offset_dst. At least one of the file descriptors must refer to a pipe. If offset_src is None, then src is read from the current position; respectively for offset_dst. The offset associated to the file descriptor that refers to a pipe must be None. The files pointed by src and dst must reside in the same filesystem, otherwise an OSError is raised with errno set to errno.EXDEV.
+
+Esta copia se realiza sin el costo adicional de transferir datos desde el kernel al espacio del usuario y luego nuevamente al kernel. También, algunos sistemas de archivos podrían implementar optimizaciones adicionales. La copia se realiza como si ambos archivos se abrieran como binarios.
+
+Upon successful completion, returns the number of bytes spliced to or from the pipe. A return value of 0 means end of input. If src refers to a pipe, then this means that there was no data to transfer, and it would not make sense to block because there are no writers connected to the write end of the pipe.
+
+Availability: Linux kernel >= 2.6.17 and glibc >= 2.5
+
+Nuevo en la versión 3.10.

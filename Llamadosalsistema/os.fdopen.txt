@@ -1,0 +1,2 @@
+os.fdopen(fd, *args, **kwargs)
+Retorna un objeto de archivo abierto conectado al descriptor de archivo fd. Este es un alias de la función incorporada open() y acepta los mismos argumentos. La única diferencia es que el primer argumento de fdopen() siempre debe ser un número entero.

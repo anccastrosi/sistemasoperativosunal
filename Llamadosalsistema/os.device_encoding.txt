@@ -1,0 +1,6 @@
+os.device_encoding
+Retorna una cadena que describe la codificación del dispositivo asociado con fd si está conectado a una terminal; sino retorna None.
+
+On Unix, if the Python UTF-8 Mode is enabled, return 'UTF-8' rather than the device encoding.
+
+Distinto en la versión 3.10: On Unix, the function now implements the Python UTF-8 Mode.

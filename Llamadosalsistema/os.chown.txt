@@ -1,0 +1,14 @@
+os.chown
+Cambia el propietario y el id del grupo de path a los numéricos uid y gid. Para dejar uno de los identificadores sin cambios, configúrelo en -1.
+
+Esta función puede soportar especificando un descriptor de archivo, rutas relativas a los descriptores de directorio y no seguir enlaces simbólicos.
+
+Ver shutil.chown() para una función de nivel superior que acepta nombres además de identificadores numéricos.
+
+Lanza un evento de auditoría os.chown con argumentos path, uid, gid, dir_fd.
+
+Disponibilidad: Unix.
+
+Nuevo en la versión 3.3: Se agregó soporte para especificar path como un descriptor de archivo abierto, y los argumentos dir_fd y follow_symlinks.
+
+Distinto en la versión 3.6: Admite un objeto tipo ruta.

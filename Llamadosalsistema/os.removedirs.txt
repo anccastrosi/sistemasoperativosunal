@@ -1,0 +1,6 @@
+os.removedirs
+Eliminar directorios de forma recursiva. Funciona como rmdir() excepto que, si el directorio hoja se elimina con éxito, removeirs() intenta eliminar sucesivamente cada directorio principal mencionado en path hasta que se genere un error (que se ignora, porque generalmente significa que un directorio padre no está vacío). Por ejemplo, os.removedirs('foo/bar/baz') primero eliminará el directorio 'foo/bar/baz', y luego eliminará 'foo/bar' y 'foo' si están vacíos. Genera OSError si el directorio hoja no se pudo eliminar con éxito.
+
+Lanza un evento de auditoría os.remove con argumentos ruta, dir_fd.
+
+Distinto en la versión 3.6: Acepta un objeto tipo ruta.

@@ -1,0 +1,2 @@
+os.closerange
+Cierra todos los descriptores de archivo desde fd_low (inclusive) hasta fd_high (exclusivo), ignorando los errores. Equivalente a (pero mucho más rápido que):

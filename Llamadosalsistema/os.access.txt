@@ -1,0 +1,25 @@
+os.access
+Use el uid/gid real para probar el acceso a path. Tenga en cuenta que la mayoría de las operaciones utilizarán el uid/gid efectivo, por lo tanto, esta rutina se puede usar en un entorno suid/sgid para probar si el usuario que invoca tiene el acceso especificado a path. mode debería ser F_OK para probar la existencia de path, o puede ser el OR inclusivo de uno o más de R_OK, W_OK, y X_OK para probar los permisos. Retorna True si el acceso está permitido, False si no. Consulte la página de manual de Unix access (2) para obtener más información.
+
+Esta función puede admitir la especificación rutas relativas a descriptores de directorio y no seguir los enlaces simbólicos.
+
+Si effective_ids es True, access() realizará sus comprobaciones de acceso utilizando el uid/gid efectivo en lugar del uid/gid real. effective_ids puede no ser compatible con su plataforma; puede verificar si está disponible o no usando os.supports_effective_ids. Si no está disponible, usarlo generará un NotImplementedError.
+
+Nota Usando access() para verificar si un usuario está autorizado para, por ejemplo, abrir un archivo antes de hacerlo usando open() crea un agujero de seguridad, porque el usuario podría explotar el breve intervalo de tiempo entre verificar y abrir el archivo para manipularlo es preferible utilizar técnicas EAFP. Por ejemplo:
+if os.access("myfile", os.R_OK):
+    with open("myfile") as fp:
+        return fp.read()
+return "some default data"
+está mejor escrito como:
+
+try:
+    fp = open("myfile")
+except PermissionError:
+    return "some default data"
+else:
+    with fp:
+        return fp.read()
+Nota Las operaciones de E/S pueden fallar incluso cuando access() indica que tendrán éxito, particularmente para operaciones en sistemas de archivos de red que pueden tener una semántica de permisos más allá del modelo habitual de bits de permiso POSIX.
+Distinto en la versión 3.3: Se agregaron los parámetros dir_fd, effective_ids y follow_symlinks.
+
+Distinto en la versión 3.6: Acepta un objeto tipo ruta.

@@ -1,0 +1,7 @@
+os.read
+Lee como máximo n bytes del descriptor de archivo fd.
+
+Retorna una cadena de bytes que contiene los bytes leídos. Si se alcanza el final del archivo al que hace referencia fd, se retorna un objeto de bytes vacío.
+
+Nota Esta función está diseñada para E/S de bajo nivel y debe aplicarse a un descriptor de archivo tal como lo retorna os.open() o pipe(). Para leer un «objeto archivo» retornado por la función incorporada open() o por popen() o fdopen(), o sys.stdin, use los métodos read() o readline().
+Distinto en la versión 3.5: Si la llamada al sistema se interrumpe y el controlador de señal no genera una excepción, la función vuelve a intentar la llamada del sistema en lugar de generar una excepción InterruptedError (ver PEP 475 para la justificación).
