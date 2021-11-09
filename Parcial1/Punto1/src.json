@@ -1,0 +1,17 @@
+{
+    "name": {
+        "0": "os.listdir",
+        "1": "os.join",
+        "2": "os.name",
+        "3": "os.mkdir",
+        "4": "os.walk"
+    },
+    "description": {
+        "0": "Retorna todas las entradas en el path indicado, tanto archivos como directorios",
+        "1": "Concatena dos cadenas retornando un path",
+        "2": "Retorna el nombre del sistema operativo",
+        "3": "Crea un directorio en el path indicado, el path debe incluir el nombre del nuevo directorio",
+        "4": "Un recorrido por los archivos y directorios del path indicado y retorna el directorio raiz, y lista de directorios y archivos"
+    }
+
+}
