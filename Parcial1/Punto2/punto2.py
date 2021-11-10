@@ -2,13 +2,11 @@ import socket
 import ssl
 
 target_host = "www.buda.com"
-# puerto 443, el cual está abierto para escuchar conexiones TCP
 target_port = 443
 context = ssl.create_default_context()
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# se envuelve el socket con SSL para solicitar datos a Buda de manera segura
 client = context.wrap_socket(client, server_hostname=target_host)
 
 client.connect((target_host, target_port))
