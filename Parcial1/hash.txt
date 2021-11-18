@@ -1,0 +1,26 @@
+Punto 1:
+ 7e14aaba58ca56de673e8cf566861f102198cf03
+Punto 2:
+- punto2.py: 43d7b951c4a015656f8bd0eab28cdebe951db8a0
+Punto 3:
+ - punto3.py: 2ec02600abd9f32970fa713e16adc70e4ba7f035
+- web.html: e28a46d6744a030b8f8120aff9f260c16d1c3c88
+Punto 4:
+ - cliente:
+ -- client.py: 317d08bc44fa47232ba10070b1eaf1111dee7048
+-- file.txt: 4ce1b62f9d5d19a875a87cd8f2595a5e12645e32
+- servidor:
+ - server.py: e18c65997ed61b88fd89c1038a9ce8c700997e12
+Punto 1:
+ 7e14aaba58ca56de673e8cf566861f102198cf03
+Punto 2:
+- punto2.py: 43d7b951c4a015656f8bd0eab28cdebe951db8a0
+Punto 3:
+ - punto3.py: 2ec02600abd9f32970fa713e16adc70e4ba7f035
+- web.html: e28a46d6744a030b8f8120aff9f260c16d1c3c88
+Punto 4:
+ - cliente:
+ -- client.py: 317d08bc44fa47232ba10070b1eaf1111dee7048
+-- file.txt: 4ce1b62f9d5d19a875a87cd8f2595a5e12645e32
+- servidor:
+ - server.py: e18c65997ed61b88fd89c1038a9ce8c700997e12
